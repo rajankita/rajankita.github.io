@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<!--
+    Plain-Academic by Vasilios Mavroudis
+    Released under the Simplified BSD License/FreeBSD (2-clause) License.
+    https://github.com/mavroudisv/plain-academic
+-->
+
+<html lang="en">
+<head>
+  <title>Ankita Raj</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+
+<!-- Navigation -->
+	<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+	  <div class="container">
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		  <ul class="nav navbar-nav">
+				  <li><a href="index.html">Home</a></li>
+				  <li><a href="#">Projects</a></li>
+				  <li><a href="#publications">Publications</a></li> 
+				  <li><a href="#">CV</a></li> 
+		  </ul>
+		</div>
+	  </div>
+	</nav>
+  
+  <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+
+            <!-- Entries Column -->
+            <div class="col-md-8" style="height: 100vh;">
+                
+                <!-- Main Image -->
+                <img class="img-responsive" src="photo.gif" alt=""><br>
+                
+                <div style="margin-top:3%; text-align:justify;">                
+					    <p>I am a PhD candidate in the <a href="https://www.cse.iitd.ac.in/">Computer Science</a> Department at <a href="https://home.iitd.ac.in/">IIT Delhi</a>. 
+                I am working on robust and trustworthy algorithms for Machine Learning, specifically in the context of Computer Vision. I am advised by Dr. <a href="https://www.cse.iitd.ac.in/~chetan/"> Chetan Arora</a>.
+              </p>
+              <p>
+                I have a Master's degree in Electronics and Communication Engineering from <a href="https://iiitd.ac.in/">IIIT Delhi</a>, 
+                where I was advised by Dr. <a href="https://www.iiitd.ac.in/praveshb"> Pravesh Biyani</a>. 
+                I also held a research position in the Robotics lab, Tata Consultancy Services from 2016 to 2018, where I worked on computer vision for robotics.                </div>
+            </div> 
+
+            <!-- Contact Info on the Sidebar -->
+            <div class="col-md-4">
+                <div style="font-family: 'Oswald', sans-serif; font-size: 32px;"><b>Ankita Raj</b></div><br>
+                <p><b>ankita.raj at cse.iitd.ac.in</b><br>
+                <p>PhD Candidate<br>
+                Computer Science and Engineering<br>
+                IIT Delhi<br>
+                </p>
+            </div>
+            
+            
+            <!-- Links on the Sidebar -->
+            <div class="col-md-4" style="margin-top:2%">
+              <dd><a href="https://scholar.google.com/citations?user=dcjyb40AAAAJ&hl=en">Google Scholar</a></dd> 
+              <dd><a href="https://github.com/rajankita/">Github</a></dd>
+              <dd><a href="https://linkedin.com/in/rajankita">LinkedIn</a></dd>
+            </div>
+            
+            
+            <!-- Publications -->
+            <div class="col-md-8" style="height: 100vh;">    
+                <h2 id="publications">Publications</h2>
+
+                <p><strong>Examining the Threat Landscape: Foundation Models and Model Theft</strong><br>
+                </a> <strong>Ankita Raj</strong>, Deepankar Varma </a>, Chetan Arora<br>
+                <em>British Machine Vision Conference (BMVC)</em>, 2024.<br>
+                [<a href="data/2024_bmvc.pdf">pdf</a>] 
+                [<a href="extras/bmvc24_supplementary.pdf">supplementary</a>] 
+                [<a href="#">code</a>] 
+                [<a href="extras/bmvc24_video.mp4">video</a>] 
+                [<a href="extras/bmvc24_poster.pdf">poster</a>] 
+                [<a href="https://ieeexplore.ieee.org/document/11359307">link</a>] 
+                <br> We show that image classification models adapted from foundation models (such as ViTs) on downstream tasks are more vulnerable to 
+                model stealing attacks compared to models derived from conventional vision architectures like ResNets.
+                </p>
+
+                <p><strong>Assessing Risk of Stealing Proprietary Models for Medical Imaging Tasks</strong><br>
+                <strong>Ankita Raj</strong>, Harsh Swaika, Deepankar Varma, <a href="https://www.cse.iitd.ac.in/~chetan/">Chetan Arora</a><br>
+                <em>International Conference on Medical Imaging and Computer Assisted Intervention (MICCAI)</em>, 2024.<br>
+                [<a href="data/2024_miccai_camera_ready.pdf">pdf</a>] 
+                [<a href="extras/miccai24_supplementary.pdf">supplementary</a>] 
+                [<a href="https://github.com/rajankita/QueryWise">code</a>] 
+                [<a href="extras/miccai24_poster.pdf">poster</a>] 
+                [<a href="https://link.springer.com/chapter/10.1007/978-3-031-72120-5_10">link</a>] 
+                <br> We explore the vulnerability of proprietary medical imaging models to model stealing attacks and propose a novel attack method that efficiently steals models under realistic threat scenarios.
+                </p>
+
+                <p><strong>Identifying Physically Realizable Triggers for Backdoored Face Recognition Networks</strong><br>
+                <strong>Ankita Raj</strong>, <a href="http://www.cis.jhu.edu/~ambar/">Ambar Pal</a>, <a href="https://www.cse.iitd.ac.in/~chetan/">Chetan Arora</a><br>
+                <em>International Conference on Image Processing (ICIP)</em>, 2021.<br>
+                [<a href="data/2021_icip_backdoors.pdf">pdf</a>] 
+                [<a href="#">code</a>] 
+                [<a href="extras/icip21_video.mp4">video</a>] 
+                [<a href="extras/icip21_poster.pdf">poster</a>] 
+                [<a href="https://ieeexplore.ieee.org/abstract/document/9506564">link</a>] 
+                <br> Given a face recognition network potentially backdoored with physically realizable triggers like sunglasses or bowtie, we propose a technique to identify such triggers.
+                </p>
+
+                <p><strong>Weighted-A* Based Energy Efficient Resource Allocation in G. Fast</strong><br>
+                <strong>Ankita Raj</strong>, <a href="https://www.iiitd.ac.in/praveshb">Pravesh Biyani</a><br>
+                <em>IEEE Transactions on Communications</em>, 2019.<br>
+                [<a href="data/2019_tcom_weighted_astart_based_allocation.pdf">pdf</a>] 
+                [<a href="https://ieeexplore.ieee.org/abstract/document/8794838">link</a>] 
+                <br> We formulate and solve an optimization problem to minimize power consumption in G.fast broadband access technology.
+                </p>
+
+                <p><strong>HiFI: A Hierarchical Framework for Incremental Learning using Deep Feature Representation</strong><br>
+                <strong>Ankita Raj</strong>, <a href="https://scholar.google.co.in/citations?user=yIkPDR0AAAAJ&hl=en">Anima Majumder</a>, <a href="https://sites.google.com/site/swagatkumar/">Swagat Kumar</a><br>
+                <em>IEEE International Conference on Robot and Human Interactive Communication (RO-MAN)</em>, 2019.<br>
+                [<a href="data/2019_roman_hifi.pdf">pdf</a>] 
+                [<a href="https://ieeexplore.ieee.org/abstract/document/8956366">link</a>] 
+                <br> A hierarchical deep-learning framework for object recognition, with near real-time training for recognizing previously unseen objects.
+                </p>
+
+                <p><strong>A* algorithm based power minimization for discontinuous operations in G. fast</strong><br>
+                <strong>Ankita Raj</strong>, <a href="https://www.iiitd.ac.in/praveshb">Pravesh Biyani</a>, <a href="https://scholar.google.co.in/citations?user=xhs98p4AAAAJ&hl=en">Sandip Aine</a><br>
+                <em>IEEE International Conference on Communications (ICC)</em>, 2017.<br>
+                [<a href="data/2017_icc_astar_based_power.pdf">pdf</a>] 
+                [<a href="https://ieeexplore.ieee.org/abstract/document/7997153">link</a>] 
+                <br> We schedule users to time slots during discontinuous operation mode in G.fast, to achieve high energy efficiency.
+                </p>
+
+                <p><strong>Analysis and Synthesis Prior Greedy Algorithms for Non-linear Sparse Recovery</strong><br>
+                <a href="https://scholar.google.co.in/citations?user=C_JJBgwAAAAJ&hl=en">Kavya Gupta</a>, <strong>Ankita Raj</strong>, <a href="https://www.iiitd.edu.in/~angshul/">Angshul Majumdar</a><br>
+                <em>Data Compression Conference (DCC)</em>, 2016.<br>
+                [<a href="data/2016_analysis_and_synthesis_prior_full_paper.pdf">pdf</a>] 
+                [<a href="https://arxiv.org/abs/1512.07709">arxiv</a>] 
+                [<a href="https://ieeexplore.ieee.org/document/7786223">link</a>] 
+                <br> We propose algorithms for recovering sparse solutions to non-linear inverse problems.
+                </p>
+
+                
+            
+        </div>
+
+
+    </div>
+    <!-- /.container -->
+    
+    <!-- Other people may like it too! -->
+    <a style="color:#b5bec9;font-size:0.8em; float:right;" href="https://github.com/mavroudisv/plain-academic">Plain Academic</a> 
+    
+</body>
+
+</html>

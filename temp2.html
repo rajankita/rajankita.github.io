@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ankita Raj</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+
+  <style>
+  body {
+    padding-top: 70px; /* Adjust this value if your navbar is taller */
+  }
+
+  /* Offset for anchor links */
+  h2[id]:before {
+    display: block;
+    content: " ";
+    margin-top: -75px; /* Negative height of your navbar */
+    height: 75px;      /* Height of your navbar */
+    visibility: hidden;
+    pointer-events: none;
+  }
+</style>
+</head>
+<body>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <ul class="nav navbar-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#updates">Recent Updates</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#teaching">Teaching</a></li>
+        <li><a href="#services">Services</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-md-8 col-xs-12">
+
+        <div class="col-md-12">
+        <div style="margin-top:3%; text-align:justify;">
+          <p>Namaste! </p>
+          
+          <p>I am Ankita, a PhD candidate in the Computer Science Department at IIT Delhi. I primarily work on Computer Vision and Trustworthy Machine Learning. In my doctoral thesis, advised by Prof. Chetan Arora, I study the security and privacy vulnerabilities in deep learning-based computer vision systems, including adversarial, backdoor, and model stealing attacks in safety-critical domains such as medical imaging and surveillance. My broader research interests encompass continual learning, and machine unlearning, and computer vision for satellite imaging. </p>
+
+          <p>I previously obtained my Masters degree from IIIT Delhi (not the same as IIT Delhi, note the extra "I"), where I worked on optimization and resource allocation in communication systems, advised by Prof. Pravesh Biyani. After completing my Masters and before joining PhD, I also did a stint as a Researcher in the Robotics Lab, Tata Consultancy Services, where I worked on computer vision for robotics and warehousing applications. </p>
+        </div>
+        </div>
+
+
+        <hr>
+
+
+        <div class="col-md-12">
+          <h2 id="updates">Recent Updates</h2>
+          <div style="max-height: 300px; overflow-y: auto; border: 1px solid #ddd; padding: 1.5em; border-left:0; border-right:0; background-color: #f9f9f9;">
+
+            <p><strong>[January 2026]</strong> Attended AAAI 2026 in Singapore.</p>
+
+            <p><strong>[December 2025]</strong> Submitted my PhD dissertation.</p>
+
+            <p><strong>[October 2025]</strong> Paper accepted at AAAI 2026.</p>
+
+            <p><strong>[October 2025]</strong> Two papers accepted at ICVGIP 2025.</p>
+
+            <p><strong>[December 2024]</strong> Attended ICVGIP 2024 at IIIT Bangalore.</p>
+            
+            <p><strong>[July 2024]</strong> Paper accepted at BMVC 2024 (<b>Oral</b>).</p>
+            
+            <p><strong>[June 2024]</strong> Paper accepted at MICCAI 2024.</p>
+            
+            <p><strong>[March 2024]</strong> Winner of <b>"3 Minute Thesis"</b> competition organized by Research Scholar Forum, IIT Delhi. Here is my <a href="path/to/your/slide.pdf">slide for the competition</a>.</p>
+            
+            <p><strong>[September 2023]</strong> Delivered a hands-on session on <i>"Vision Transformers for Brain Tumor Classification in MRI Images"</i> in the workshop on “Artificial Intelligence in Modern Biology” sponsored by DBT at ICGEB, New Delhi.</p>
+
+          </div>
+        </div>
+
+        <div class="col-md-12">
+          <h2 id="publications">Publications</h2>
+
+          <p>
+            <b>Backdoor Attacks on Open Vocabulary Object Detectors via Multi-Modal Prompt Tuning</b><br>
+            <strong>Ankita Raj</strong>, Chetan Arora<br>
+            <em>AAAI Conference on Artificial Intelligence</em>, 2026.<br>
+            [<a href="https://arxiv.org/abs/2511.12735">arxiv</a>] 
+            [<a href="https://github.com/rajankita/TrAP">code</a>] 
+            [<a href="data/aaai26_poster.pdf">poster</a>]
+          </p>
+
+          <p>
+            <b>Mimicking Human Visual Development for Learning Robust Image Representations</b><br>
+            <strong>Ankita Raj</strong>, Kaashika Prajaapat, Tapan Kumar Gandhi, Chetan Arora<br>
+            <em>Indian Conference on Computer Vision, Graphics and Image Processing (ICVGIP)</em>, 2025.<br>
+            [<a href="https://arxiv.org/abs/2512.14360">arxiv</a>] 
+            [<a href="https://github.com/rajankita/Visual_Acuity_Curriculum">code</a>]
+            [<a href="data/icvgip25-poster-1.pdf">poster</a>]
+            [<a href="https://www.youtube.com/watch?v=Xq7oARw1LEI">video</a>]
+
+          </p>
+
+          <p>
+            <b>Rethinking Detection Heads: Enhancing YOLO for Drone Image Object Detection</b><br>
+            Rutvik Patel, Anureet Chhabra, <strong>Ankita Raj</strong>, Chetan Arora<br>
+            <em>Indian Conference on Computer Vision, Graphics and Image Processing (ICVGIP)</em>, 2025.<br>
+            [<a href="#">pdf??</a>] 
+            [<a href="https://www.youtube.com/watch?v=liyDgCO5Vm0">video</a>]
+          </p>
+          
+          <p>
+            <b>Examining the Threat Landscape: Foundation Models and Model Theft</b><br>
+            <strong>Ankita Raj</strong>, Deepankar Varma, Chetan Arora<br>
+            <em>British Machine Vision Conference (BMVC)</em>, 2024.<br>
+            [<a href="https://arxiv.org/abs/2502.18077">arxiv</a>] 
+            [<a href="https://github.com/rajankita/foundation_model_stealing">code</a>] 
+            [<a href="extras/bmvc24_video.mp4">video</a>] 
+            [<a href="extras/bmvc24_poster.pdf">poster</a>] 
+            [<a href="https://ieeexplore.ieee.org/document/11359307">link</a>]<br>
+            <span style="font-size: 0.95em; color: #444;">We show that image classification models adapted from foundation models (such as ViTs) on downstream tasks are more vulnerable to model stealing attacks compared to models derived from conventional vision architectures like ResNets.</span>
+          </p>
+
+          <p>
+            <b>Assessing Risk of Stealing Proprietary Models for Medical Imaging Tasks</b><br>
+            <strong>Ankita Raj</strong>, Harsh Swaika, Deepankar Varma, <a href="https://www.cse.iitd.ac.in/~chetan/">Chetan Arora</a><br>
+            <em>International Conference on Medical Imaging and Computer Assisted Intervention (MICCAI)</em>, 2024.<br>
+            [<a href="https://arxiv.org/abs/2506.19464">arxiv</a>] 
+            [<a href="https://github.com/rajankita/QueryWise">code</a>] 
+            [<a href="extras/miccai24_poster.pdf">poster</a>] 
+            [<a href="https://link.springer.com/chapter/10.1007/978-3-031-72120-5_10">link</a>]<br>
+            <span style="font-size: 0.95em; color: #444;">We explore the vulnerability of proprietary medical imaging models to model stealing attacks and propose a novel attack method that efficiently steals models under realistic threat scenarios.</span>
+          </p>
+
+          <p>
+            <b>Identifying Physically Realizable Triggers for Backdoored Face Recognition Networks</b><br>
+            <strong>Ankita Raj</strong>, <a href="http://www.cis.jhu.edu/~ambar/">Ambar Pal</a>, <a href="https://www.cse.iitd.ac.in/~chetan/">Chetan Arora</a><br>
+            <em>International Conference on Image Processing (ICIP)</em>, 2021.<br>
+            [<a href="https://arxiv.org/abs/2506.19533">arxiv</a>] 
+            [<a href="#">code??</a>] 
+            [<a href="extras/icip21_video.mp4">video</a>] 
+            [<a href="extras/icip21_poster.pdf">poster</a>] 
+            [<a href="https://ieeexplore.ieee.org/abstract/document/9506564">link</a>]<br>
+            <span style="font-size: 0.95em; color: #444;">Given a face recognition network potentially backdoored with physically realizable triggers like sunglasses or bowtie, we propose a technique to identify such triggers.</span>
+          </p>
+
+          <p>
+            <b>Weighted-A* Based Energy Efficient Resource Allocation in G. Fast</b><br>
+            <strong>Ankita Raj</strong>, <a href="https://www.iiitd.ac.in/praveshb">Pravesh Biyani</a><br>
+            <em>IEEE Transactions on Communications</em>, 2019.<br>
+            [<a href="data/2019_tcom_weighted_astart_based_allocation.pdf">pdf</a>] 
+            [<a href="https://ieeexplore.ieee.org/abstract/document/8794838">link</a>]<br>
+            <span style="font-size: 0.95em; color: #444;">We formulate and solve an optimization problem to minimize power consumption in G.fast broadband access technology.</span>
+          </p>
+
+          <p>
+            <b>HiFI: A Hierarchical Framework for Incremental Learning using Deep Feature Representation</b><br>
+            <strong>Ankita Raj</strong>, <a href="https://scholar.google.co.in/citations?user=yIkPDR0AAAAJ&hl=en">Anima Majumder</a>, <a href="https://sites.google.com/site/swagatkumar/">Swagat Kumar</a><br>
+            <em>IEEE International Conference on Robot and Human Interactive Communication (RO-MAN)</em>, 2019.<br>
+            [<a href="data/2019_roman_hifi.pdf">pdf</a>] 
+            [<a href="https://ieeexplore.ieee.org/abstract/document/8956366">link</a>]<br>
+            <span style="font-size: 0.95em; color: #444;">A hierarchical deep-learning framework for object recognition, with near real-time training for recognizing previously unseen objects.</span>
+          </p>
+
+          <p>
+            <b>A* algorithm based power minimization for discontinuous operations in G. fast</b><br>
+            <strong>Ankita Raj</strong>, <a href="https://www.iiitd.ac.in/praveshb">Pravesh Biyani</a>, <a href="https://scholar.google.co.in/citations?user=xhs98p4AAAAJ&hl=en">Sandip Aine</a><br>
+            <em>IEEE International Conference on Communications (ICC)</em>, 2017.<br>
+            [<a href="data/2017_icc_astar_based_power.pdf">pdf</a>] 
+            [<a href="https://ieeexplore.ieee.org/abstract/document/7997153">link</a>]<br>
+            <span style="font-size: 0.95em; color: #444;">We schedule users to time slots during discontinuous operation mode in G.fast, to achieve high energy efficiency.</span>
+          </p>
+
+          <p>
+            <b>Analysis and Synthesis Prior Greedy Algorithms for Non-linear Sparse Recovery</b><br>
+            <a href="https://scholar.google.co.in/citations?user=C_JJBgwAAAAJ&hl=en">Kavya Gupta</a>, <strong>Ankita Raj</strong>, <a href="https://www.iiitd.edu.in/~angshul/">Angshul Majumdar</a><br>
+            <em>Data Compression Conference (DCC)</em>, 2016.<br>
+            [<a href="data/2016_analysis_and_synthesis_prior_full_paper.pdf">pdf</a>] 
+            [<a href="https://arxiv.org/abs/1512.07709">arxiv</a>] 
+            [<a href="https://ieeexplore.ieee.org/document/7786223">link</a>]<br>
+            <span style="font-size: 0.95em; color: #444;">We propose algorithms for recovering sparse solutions to non-linear inverse problems.</span>
+          </p>
+        </div>
+
+
+        <div class="col-md-12">
+          <h2 id="teaching">Teaching</h2>
+          
+          <h4><strong>As a Teaching Assistant at IIT Delhi</strong></h4>
+          <ul>
+            <li>Machine Learning (COL774) -  Diwali semester 2022</li>
+            <li>Digital Image Processing (COL783) - Chetan Arora, Holi semester 2022</li>
+            <li>Computer Vision (COL780) - Chetan Arora, Diwali semester 2021 and Diwali semester 2020</li>
+            <li>Data Structures and Algorithms (COL106) - Amit Kumar and Mausam, Holi semester 2021; Srikanta Bedathur and Chetan Arora, Holi semester 2020</li>
+            <li>Introduction to Programming (COL100) - Prem Kalra and Huzur Saran, Diwali semester 2019</li>
+            <li>Advanced Functional Brain Imaging (COL786) - Rahul Garg, Holi semester 2019</li>
+          </ul>
+
+          <h4><strong>As a Teaching Assistant at IIIT Delhi</strong></h4>
+          <ul>
+            <li>Probability and Statistics</li>
+            <li>Engineering Optimization</li>
+            <li>Signals and Systems</li>
+            <li>Maths I (Linear Algebra)</li>
+            <li>Maths II (Differential Equations)</li>
+          </ul>
+        </div>
+
+        <div class="col-md-12">
+          <h2 id="services">Services</h2>
+          
+          <h4><strong>Reviewer / Program Committee Member</strong></h4>
+          <ul>
+            <li><b>Conferences:</b> CVPR (2026, 2025, 2024), WACV (2025, 2024, 2023), AAAI (2026, 2025), MICCAI (2025, 2024), WIFS 2025, ICCV SafeMM Workshop 2025</li>
+            <li><b>Journals:</b> International Journal of Computer Vision (IJCV), IEEE Transactions on Multimedia</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- <div class="col-md-3 col-md-offset-1 col-xs-12">
+        <div style="word-wrap: break-word; font-family: 'Oswald', sans-serif; font-size: 32px; margin-top:20px;">
+          <b>Ankita Raj</b>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-10 col-xs-6">
+            <img class="img-responsive" src="pictures/AnkitaRaj.jpg" alt="Your Headshot" style="border-radius: 4px;">
+          </div>
+        </div>
+        <br>
+        <div>
+          <p>Email: ankita.raj at cse.iitd.ac.in</p>
+          <p><a href="https://scholar.google.com/citations?user=dcjyb40AAAAJ&hl=en">Google Scholar</a></p>
+          <p><a href="https://github.com/rajankita/">GitHub</a></p>
+          <p><a href="https://www.linkedin.com/in/rajankita/">LinkedIn</a></p>
+        </div>
+      </div> -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+      <div class="col-md-3 col-md-offset-1 col-xs-12">
+            <div style="font-family: 'Oswald', sans-serif; font-size: 32px; margin-top:20px;"><b>Ankita Raj</b></div>
+            <div style="color: #666; margin-bottom: 15px;">PhD Candidate • IIT Delhi</div>
+            
+            <img class="img-responsive" src="pictures/AnkitaRaj.jpg" alt="Ankita Raj" style="border-radius: 8px; filter: grayscale(20%);">
+            
+            <div style="margin-top: 20px; font-size: 0.95em;">
+                <p><strong>Current Status:</strong> <span class="label label-success">Thesis Submitted!</span></p>
+                <p><strong>Location:</strong> New Delhi, India</p>
+            </div>
+
+            <hr>
+            <div>
+                <p><a href="mailto:ankita.raj@cse.iitd.ac.in" class="btn btn-default btn-sm btn-block">Email Me</a></p>
+                <p><a href="https://scholar.google.com/citations?user=dcjyb40AAAAJ" target="_blank" class="btn btn-primary btn-sm btn-block">Google Scholar</a></p>
+                <p><a href="https://github.com/rajankita/" target="_blank" class="btn btn-dark btn-sm btn-block" style="background-color: #333; border-color: #333; color: #fff;">
+                <i class="fa fa-github"></i> GitHub</a></p>
+                <p><a href="https://www.linkedin.com/in/rajankita/" target="_blank" class="btn btn-info btn-sm btn-block" style="background-color: #0077B5; border-color: #0077B5;">
+                LinkedIn</a></p>
+            </div>
+        </div>
+
+    </div>
+  </div>
+
+  <footer class="container" style="margin-top: 50px;">
+    <a style="color:#b5bec9; font-size:0.8em; float:right;" href="https://github.com/mavroudisv/plain-academic">Template by Vasilios Mavroudis</a>
+  </footer>
+
+</body>
+</html>

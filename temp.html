@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ankita Raj</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-size: 20px; /* Significantly increased base font size */
+      background-color: #fdfdfd;
+      color: #333;
+    }
+
+    .main-container {
+      margin-top: 50px;
+      margin-bottom: 80px;
+    }
+
+    /* Navbar Styling */
+    .navbar-nav > li > a {
+      font-size: 1.25rem;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    /* Bio Section Styling */
+    .bio-text {
+      font-size: 1.3rem; /* Much larger bio text */
+      line-height: 1.8;
+      text-align: justify;
+      color: #222;
+      margin-bottom: 50px;
+    }
+
+    .bio-text a {
+      color: #337ab7;
+      font-weight: 500;
+    }
+
+    /* Right Sidebar Styling */
+    .profile-pic-container {
+      margin-bottom: 30px;
+    }
+
+    .profile-pic {
+      width: 100%;
+      max-width: 250px; /* Slightly larger image */
+      aspect-ratio: 1 / 1;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border: 4px solid #fff;
+    }
+
+    .sidebar-text p {
+      font-size: 1.25rem;
+      line-height: 1.6;
+    }
+
+    .sidebar-links dd {
+      margin-bottom: 12px;
+      font-size: 1.25rem;
+    }
+
+    /* Publication Card Enhancements */
+    :root {
+      --primary-blue: #337ab7; 
+      --bg-hover: #f4f7f9;
+    }
+    
+    .pub-card {
+      padding: 30px; 
+      margin-bottom: 30px; 
+      border-radius: 12px; 
+      background: #fff;
+      border: 1px solid #e3e3e3; 
+      border-left: 6px solid #d0d0d0;
+      transition: all 0.3s ease;
+    }
+    
+    .pub-card:hover {
+      transform: translateY(-4px); 
+      box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+      border-left-color: var(--primary-blue); 
+      background-color: var(--bg-hover);
+    }
+    
+    .pub-title { 
+      font-size: 1.6rem; /* Huge, prominent title */
+      font-weight: 700; 
+      display: block; 
+      margin-bottom: 10px; 
+      color: #111;
+      line-height: 1.4;
+    }
+    
+    .pub-authors { 
+      font-size: 1.2rem; 
+      color: #555; 
+      margin-bottom: 8px; 
+    }
+    
+    .pub-authors strong { 
+      color: #000; 
+    }
+    
+    .pub-venue { 
+      font-size: 1.2rem; 
+      font-style: italic; 
+      color: #444; 
+      margin-bottom: 15px; 
+    }
+    
+    .btn-link-custom {
+      display: inline-block; 
+      padding: 8px 18px; 
+      margin-right: 10px; 
+      margin-top: 10px;
+      border-radius: 25px; 
+      background: #eef2f5; 
+      color: var(--primary-blue); 
+      text-decoration: none;
+      font-size: 1.1rem; /* Larger buttons */
+      font-weight: 600; 
+      transition: background 0.2s;
+    }
+    
+    .btn-link-custom:hover { 
+      background: var(--primary-blue); 
+      color: white; 
+      text-decoration: none;
+    }
+    
+    .pub-abstract {
+      font-size: 1.2rem; /* Easy-to-read abstract */
+      line-height: 1.7; 
+      color: #555;
+      border-top: 1px solid #eaeaea; 
+      padding-top: 18px; 
+      margin-top: 18px;
+    }
+
+    h2 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 2.8rem; /* Larger section header */
+      margin-bottom: 35px;
+      color: #222;
+      border-bottom: 3px solid #eee;
+      padding-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#publications">Publications</a></li> 
+          <li><a href="#">CV</a></li> 
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="container main-container">
+    <div class="row">
+
+      <div class="col-md-8">
+        
+        <div class="bio-text">                
+          <p>I am a PhD candidate in the <a href="https://www.cse.iitd.ac.in/">Computer Science</a> Department at <a href="https://home.iitd.ac.in/">IIT Delhi</a>, where I recently submitted my thesis. 
+            I work on robust and trustworthy algorithms for Machine Learning, specifically in the context of Computer Vision. I am advised by Prof. <a href="https://www.cse.iitd.ac.in/~chetan/">Chetan Arora</a>.
+          </p>
+          <p>
+            I have a Master's degree in Electronics and Communication Engineering from <a href="https://iiitd.ac.in/">IIIT Delhi</a>, 
+            where I was advised by Dr. <a href="https://www.iiitd.ac.in/praveshb">Pravesh Biyani</a>. 
+            I also held a research position in the Robotics lab, Tata Consultancy Services from 2016 to 2018, where I worked on computer vision for robotics.
+          </p>
+        </div>
+
+        <h2 id="publications">Publications</h2>
+        <div id="dynamic-paper-list"></div>
+
+      </div> 
+
+      <div class="col-md-3 col-md-offset-1">
+        
+        <div class="profile-pic-container">
+          <img src="https://via.placeholder.com/400" alt="Ankita Raj" class="profile-pic">
+        </div>
+
+        <div style="font-family: 'Oswald', sans-serif; font-size: 42px; margin-bottom: 20px; line-height: 1.1;"><b>Ankita Raj</b></div>
+        
+        <div class="sidebar-text">
+          <p><b>ankita.raj [at] cse.iitd.ac.in</b></p>
+          <p>PhD Candidate<br>
+          Computer Science and Engineering<br>
+          IIT Delhi<br>
+          </p>
+        </div>
+        
+        <div class="sidebar-links" style="margin-top: 35px;">
+          <dd><a href="https://scholar.google.com/citations?user=dcjyb40AAAAJ&hl=en">Google Scholar</a></dd> 
+          <dd><a href="https://github.com/rajankita/">Github</a></dd>
+          <dd><a href="https://linkedin.com/in/rajankita">LinkedIn</a></dd>
+        </div>
+
+      </div>
+      
+    </div>
+  </div>
+    
+  <div style="text-align: center; margin-bottom: 40px;">
+    <a style="color:#b5bec9;font-size:1rem;" href="https://github.com/mavroudisv/plain-academic">Plain Academic Layout</a> 
+  </div>
+
+  <script>
+    const myName = "Ankita Raj"; 
+    
+    const publications = [
+      {
+        title: "[Draft] Title of your AAAI 2026 Poster",
+        authors: ["Ankita Raj", "Chetan Arora"],
+        venue: "AAAI Conference on Artificial Intelligence, Singapore, 2026",
+        abstract: "Brief description of the work presented at AAAI 2026...",
+        links: {
+          "Poster": "#"
+        }
+      },
+      {
+        title: "Examining the Threat Landscape: Foundation Models and Model Theft",
+        authors: ["Ankita Raj", "Deepankar Varma", "Chetan Arora"],
+        venue: "British Machine Vision Conference (BMVC), 2024",
+        abstract: "We show that image classification models adapted from foundation models (such as ViTs) on downstream tasks are more vulnerable to model stealing attacks compared to models derived from conventional vision architectures like ResNets.",
+        links: {
+          "PDF": "data/2024_bmvc.pdf",
+          "Supplementary": "extras/bmvc24_supplementary.pdf",
+          "Code": "#",
+          "Video": "extras/bmvc24_video.mp4",
+          "Poster": "extras/bmvc24_poster.pdf",
+          "Link": "https://ieeexplore.ieee.org/document/11359307"
+        }
+      },
+      {
+        title: "Assessing Risk of Stealing Proprietary Models for Medical Imaging Tasks",
+        authors: ["Ankita Raj", "Harsh Swaika", "Deepankar Varma", "Chetan Arora"],
+        venue: "International Conference on Medical Imaging and Computer Assisted Intervention (MICCAI), 2024",
+        abstract: "We explore the vulnerability of proprietary medical imaging models to model stealing attacks and propose a novel attack method that efficiently steals models under realistic threat scenarios.",
+        links: {
+          "PDF": "data/2024_miccai_camera_ready.pdf",
+          "Supplementary": "extras/miccai24_supplementary.pdf",
+          "Code": "https://github.com/rajankita/QueryWise",
+          "Poster": "extras/miccai24_poster.pdf",
+          "Springer": "https://link.springer.com/chapter/10.1007/978-3-031-72120-5_10"
+        }
+      },
+      {
+        title: "Identifying Physically Realizable Triggers for Backdoored Face Recognition Networks",
+        authors: ["Ankita Raj", "Ambar Pal", "Chetan Arora"],
+        venue: "International Conference on Image Processing (ICIP), 2021",
+        abstract: "Given a face recognition network potentially backdoored with physically realizable triggers like sunglasses or bowtie, we propose a technique to identify such triggers.",
+        links: {
+          "PDF": "data/2021_icip_backdoors.pdf",
+          "Code": "#",
+          "Video": "extras/icip21_video.mp4",
+          "Poster": "extras/icip21_poster.pdf",
+          "Link": "https://ieeexplore.ieee.org/abstract/document/9506564"
+        }
+      },
+      {
+        title: "Weighted-A* Based Energy Efficient Resource Allocation in G. Fast",
+        authors: ["Ankita Raj", "Pravesh Biyani"],
+        venue: "IEEE Transactions on Communications, 2019",
+        abstract: "We formulate and solve an optimization problem to minimize power consumption in G.fast broadband access technology.",
+        links: {
+          "PDF": "data/2019_tcom_weighted_astart_based_allocation.pdf",
+          "Link": "https://ieeexplore.ieee.org/abstract/document/8794838"
+        }
+      },
+      {
+        title: "HiFI: A Hierarchical Framework for Incremental Learning using Deep Feature Representation",
+        authors: ["Ankita Raj", "Anima Majumder", "Swagat Kumar"],
+        venue: "IEEE International Conference on Robot and Human Interactive Communication (RO-MAN), 2019",
+        abstract: "A hierarchical deep-learning framework for object recognition, with near real-time training for recognizing previously unseen objects.",
+        links: {
+          "PDF": "data/2019_roman_hifi.pdf",
+          "Link": "https://ieeexplore.ieee.org/abstract/document/8956366"
+        }
+      },
+      {
+        title: "A* algorithm based power minimization for discontinuous operations in G. fast",
+        authors: ["Ankita Raj", "Pravesh Biyani", "Sandip Aine"],
+        venue: "IEEE International Conference on Communications (ICC), 2017",
+        abstract: "We schedule users to time slots during discontinuous operation mode in G.fast, to achieve high energy efficiency.",
+        links: {
+          "PDF": "data/2017_icc_astar_based_power.pdf",
+          "Link": "https://ieeexplore.ieee.org/abstract/document/7997153"
+        }
+      },
+      {
+        title: "Analysis and Synthesis Prior Greedy Algorithms for Non-linear Sparse Recovery",
+        authors: ["Kavya Gupta", "Ankita Raj", "Angshul Majumdar"],
+        venue: "Data Compression Conference (DCC), 2016",
+        abstract: "We propose algorithms for recovering sparse solutions to non-linear inverse problems.",
+        links: {
+          "PDF": "data/2016_analysis_and_synthesis_prior_full_paper.pdf",
+          "Arxiv": "https://arxiv.org/abs/1512.07709",
+          "Link": "https://ieeexplore.ieee.org/document/7786223"
+        }
+      }
+    ];
+
+    const container = document.getElementById('dynamic-paper-list');
+
+    publications.forEach(pub => {
+      const card = document.createElement('div');
+      card.className = 'pub-card';
+
+      const formattedAuthors = pub.authors.map(author => 
+        author === myName ? `<strong>${author}</strong>` : author
+      ).join(", ");
+
+      let linksHtml = '';
+      for (const [key, url] of Object.entries(pub.links)) {
+        linksHtml += `<a href="${url}" class="btn-link-custom">${key}</a>`;
+      }
+
+      card.innerHTML = `
+        <span class="pub-title">${pub.title}</span>
+        <div class="pub-authors">${formattedAuthors}</div>
+        <div class="pub-venue">${pub.venue}</div>
+        <div class="pub-abstract">${pub.abstract}</div>
+        <div class="pub-links">${linksHtml}</div>
+      `;
+
+      container.appendChild(card);
+    });
+  </script>
+</body>
+</html>
