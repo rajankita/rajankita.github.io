@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <style>
     body {
@@ -41,7 +42,7 @@
       /* text-decoration: underline; /* Standard for academic sites to show "clickability" */
     }
 
-    */ a:hover,
+    a:hover,
     a:focus {
       color: #645307;
       /* Your Deep Olive gold */
@@ -147,7 +148,7 @@
   <div class="container">
     <div class="row">
 
-      <div class="col-md-3 col-md-push-9 col-xs-12">
+      <div class="col-md-3 col-md-push-9 col-xs-12" style="z-index: 10;">
         <div style="font-family: 'Oswald', sans-serif; font-size: 32px; margin-top:20px; color: #645307;"><b>Ankita
             Raj</b></div>
         <div style="color: #857463; margin-bottom: 15px;">PhD Candidate • IIT Delhi</div>
@@ -232,10 +233,34 @@
           </div>
         </div>
       </div>
+    </div>
 
-      <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet"> -->
+    <!-- <div class="row">
       <div class="col-md-12 col-xs-12">
+
+        <div class="col-md-12">
+          <h2 id="teaching">Education</h2>
+
+          <p>
+            <h4><strong>Ph.D, Indian Institute of Technology (IIT) Delhi</strong></h4>
+            <strong>2018 - Present</strong><br>
+            Advised by Prof. Chetan Arora | CGPA: 8.46/10<br>
+          </p>
+
+          <p>
+            <h4><strong>M.Tech, Indraprastha Institute of Information Technology (IIIT) Delhi</strong></h4>
+            <strong>2014 - 2016</strong><br>
+            Advised by Prof. Pravesh Biyani | CGPA: 9.25/10<br>
+          </p>
+
+          <h4><strong>B.Tech, North Eastern Regional Institute of Science and Technology (NERIST)</strong></h4>
+          <p>
+            <strong>2010 - 2014</strong><br>
+            Advised by Prof. Angshul Majumdar | CGPA: 8.91/10<br>
+        </div> -->
+
+        
         <div class="col-md-12">
           <h2 id="publications">Publications</h2>
 
@@ -380,11 +405,11 @@
           <h4><strong>As a Teaching Assistant at IIT Delhi</strong></h4>
           <ul>
             <li>Machine Learning (COL774) - Diwali semester 2022</li>
-            <li>Digital Image Processing (COL783) - Chetan Arora, Holi semester 2022</li>
-            <li>Computer Vision (COL780) - Chetan Arora, Diwali semester 2021 and Diwali semester 2020</li>
-            <li>Data Structures and Algorithms (COL106) - Amit Kumar and Mausam, Holi semester 2021; Srikanta Bedathur
-              and Chetan Arora, Holi semester 2020</li>
-            <li>Introduction to Programming (COL100) - Prem Kalra and Huzur Saran, Diwali semester 2019</li>
+            <li>Digital Image Processing (COL783) - with Prof. Chetan Arora, Holi semester 2022</li>
+            <li>Computer Vision (COL780) - with Prof. Chetan Arora, Diwali semester 2021 and Diwali semester 2020</li>
+            <li>Data Structures and Algorithms (COL106) - with Prof. Amit Kumar and Prof. Mausam, Holi semester 2021; with Prof. Srikanta Bedathur
+              and Prof. Chetan Arora, Holi semester 2020</li>
+            <li>Introduction to Programming (COL100) - with Prof. Prem Kalra and Prof. Huzur Saran, Diwali semester 2019</li>
             <li>Advanced Functional Brain Imaging (COL786) - Rahul Garg, Holi semester 2019</li>
           </ul>
 
@@ -481,18 +506,18 @@
     </div>
   </footer>
 
-<script>
-  $(document).ready(function () {
-    // Select all links inside the navbar
-    $('.navbar-nav li a').click(function(event) {
-      // Check if the navbar-toggle button is visible (meaning we are on mobile)
-      if ($('.navbar-toggle').is(':visible')) {
-        // Toggle the collapse
-        $('.navbar-collapse').collapse('hide');
-      }
+  <script>
+    $(document).ready(function () {
+      // Select all links inside the navbar
+      $('.navbar-nav li a').click(function (event) {
+        // Check if the navbar-toggle button is visible (meaning we are on mobile)
+        if ($('.navbar-toggle').is(':visible')) {
+          // Toggle the collapse
+          $('.navbar-collapse').collapse('hide');
+        }
+      });
     });
-  });
-</script>
+  </script>
 
 </body>
 
